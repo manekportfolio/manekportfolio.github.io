@@ -7,6 +7,8 @@ interface ScrollRevealProps {
   direction?: 'up' | 'down' | 'left' | 'right';
   delay?: number;
   once?: boolean;
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
 }
 
 const ScrollReveal = ({
@@ -15,6 +17,8 @@ const ScrollReveal = ({
   direction = 'up',
   delay = 0,
   once = true,
+  onMouseEnter,
+  onMouseLeave,
 }: ScrollRevealProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const intersected = useRef(false);
@@ -57,7 +61,12 @@ const ScrollReveal = ({
   }, [delay, direction, once]);
 
   return (
-    <div ref={ref} className={className}>
+    <div 
+      ref={ref} 
+      className={className}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
       {children}
     </div>
   );
