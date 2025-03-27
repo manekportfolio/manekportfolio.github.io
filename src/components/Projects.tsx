@@ -24,10 +24,10 @@ const projects = [
   },
   {
     id: 3,
-    title: "Healthcare Patient Portal",
-    description: "Managed the development of a patient portal that improved appointment scheduling efficiency by 65% and patient satisfaction scores by 28%.",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
-    tags: ["Product Management", "HIPAA Compliance", "User Research"],
+    title: "Analyzing Sustainability-Related Performance Incentives for Executives",
+    description: "Conducted in-depth research and analysis on how sustainability metrics are integrated into executive compensation packages across Fortune 500 companies.",
+    image: "https://images.unsplash.com/photo-1536859355448-76f92ebdc33d",
+    tags: ["Research", "Data Analysis", "ESG"],
     link: "#"
   }
 ];
