@@ -1,10 +1,10 @@
 
 import ScrollReveal from './ScrollReveal';
-import { Code, Sparkles, Leaf } from 'lucide-react';
+import { Code, Sparkles } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="section-padding bg-primary/10 relative overflow-hidden">
+    <section id="about" className="section-padding bg-secondary/30 relative overflow-hidden">
       <div className="container-custom">
         <ScrollReveal className="max-w-md mx-auto text-center mb-16">
           <span className="inline-block py-1 px-3 text-xs font-medium bg-primary/5 rounded-full mb-3">
@@ -14,7 +14,7 @@ const About = () => {
             My Professional Journey
           </h2>
           <p className="text-muted-foreground">
-            From developing software to leading product strategy, with a deep commitment to sustainability throughout my career.
+            From developing software to leading product strategy, I've embraced the evolution of my tech career.
           </p>
         </ScrollReveal>
         
@@ -32,12 +32,12 @@ const About = () => {
               <div className="absolute -bottom-6 -right-6 bg-white rounded-lg shadow-lg p-4 max-w-xs">
                 <div className="flex items-start gap-3">
                   <div className="mt-1 p-1.5 rounded-full bg-primary/10 text-primary">
-                    <Leaf className="h-4 w-4" />
+                    <Sparkles className="h-4 w-4" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-sm mb-1">Sustainability Advocate</h3>
+                    <h3 className="font-medium text-sm mb-1">Product Vision</h3>
                     <p className="text-xs text-muted-foreground">
-                      Award-winning researcher dedicated to developing solutions for climate change.
+                      Passionate about turning complex problems into elegant solutions.
                     </p>
                   </div>
                 </div>
@@ -81,25 +81,6 @@ const About = () => {
                 <div className="pl-12">
                   <p className="text-sm text-muted-foreground">
                     Today, I bridge the gap between business objectives, user experiences, and technical feasibility to create products that truly matter.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="bg-white rounded-xl p-6 shadow-sm">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="mt-1 p-2 rounded-full bg-primary/10 text-primary">
-                    <Leaf className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <h3 className="font-display font-bold text-xl mb-2">Sustainability Research</h3>
-                    <p className="text-muted-foreground">
-                      My passion for sustainability led me to complete an award-winning master's thesis on climate change solutions. This research has deeply influenced my approach to product development, where I constantly seek to create technology that has a positive environmental impact.
-                    </p>
-                  </div>
-                </div>
-                <div className="pl-12">
-                  <p className="text-sm text-muted-foreground">
-                    I believe that technological innovation plays a crucial role in addressing our climate crisis, and I'm committed to developing products that contribute to a more sustainable future.
                   </p>
                 </div>
               </div>
