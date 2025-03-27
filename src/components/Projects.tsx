@@ -15,10 +15,10 @@ const projects = [
   },
   {
     id: 2,
-    title: "Financial Analytics Dashboard",
-    description: "Developed a comprehensive analytics dashboard for financial advisors, streamlining client portfolio management and performance tracking.",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-    tags: ["Data Visualization", "React", "Node.js"],
+    title: "Stored Value Admin Tool",
+    description: "Built an administrative dashboard for financial institutions to manage stored value cards and accounts, improving operational efficiency by 65%.",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    tags: ["Financial Services", "React", "Dashboard Design"],
     github: "#",
     link: "#"
   },
