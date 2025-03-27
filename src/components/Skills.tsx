@@ -8,12 +8,12 @@ const Skills = () => {
       title: "Technical Skills",
       icon: <Code className="h-5 w-5" />,
       skills: [
-        "Full-Stack Development",
-        "JavaScript/TypeScript",
-        "React & React Native",
-        "Node.js & Express",
+        "Backend Development",
+        "Java & Python",
         "REST API Design",
-        "Database Architecture"
+        "Machine learning",
+        "Jira & Confluence",
+        "Tableau & Figma"
       ]
     },
     {
@@ -58,7 +58,7 @@ const Skills = () => {
       skills: [
         "Go-to-Market Strategy",
         "Competitive Analysis",
-        "Pricing Models",
+        "Marketing Models",
         "Business Case Development",
         "Strategic Planning",
         "Stakeholder Management"
@@ -92,12 +92,12 @@ const Skills = () => {
             My unique combination of technical expertise and product management skills allows me to bridge the gap between vision and execution.
           </p>
         </ScrollReveal>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
-            <ScrollReveal 
-              key={category.title} 
-              className="group" 
+            <ScrollReveal
+              key={category.title}
+              className="group"
               delay={150 * index}
             >
               <div className="bg-white rounded-xl p-6 shadow-sm transition-all duration-300 hover:shadow-md h-full flex flex-col">
@@ -107,7 +107,7 @@ const Skills = () => {
                   </div>
                   <h3 className="font-display font-bold text-lg">{category.title}</h3>
                 </div>
-                
+
                 <ul className="space-y-2 flex-1">
                   {category.skills.map((skill) => (
                     <li key={skill} className="flex items-start">
@@ -121,7 +121,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-      
+
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-b from-primary/5 to-transparent rounded-bl-full blur-3xl -z-10" />
       <div className="absolute -bottom-32 -left-32 w-64 h-64 rounded-full border border-primary/10 -z-10" />
