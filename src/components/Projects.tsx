@@ -24,10 +24,10 @@ const projects = [
   },
   {
     id: 3,
-    title: "Analyzing Sustainability-Related Performance Incentives for Executives",
-    description: "Conducted in-depth research and analysis on how sustainability metrics are integrated into executive compensation packages across Fortune 500 companies.",
-    image: "https://images.unsplash.com/photo-1536859355448-76f92ebdc33d",
-    tags: ["Research", "Data Analysis", "ESG"],
+    title: "Incentivizing sustainability-related performance for managers",
+    description: "Designed and implemented a framework to align managerial compensation with corporate sustainability goals, resulting in 40% improved environmental metrics.",
+    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09",
+    tags: ["Sustainability", "Performance Management", "ESG"],
     link: "#"
   }
 ];
