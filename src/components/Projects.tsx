@@ -15,7 +15,7 @@ const projects = [
   },
   {
     id: 2,
-    title: "Stored Value Admin Tool",
+    title: "Payments Admin Tool",
     description: "Built an administrative dashboard for financial institutions to manage stored value cards and accounts, improving operational efficiency by 65%.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
     tags: ["Financial Services", "React", "Dashboard Design"],
