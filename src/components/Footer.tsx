@@ -3,22 +3,17 @@ import { Github, Linkedin, Twitter } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   const socialLinks = [
-    { 
-      icon: <Github className="h-5 w-5" />, 
-      href: "https://github.com", 
-      label: "GitHub" 
+    {
+      icon: <Github className="h-5 w-5" />,
+      href: "https://github.com/amtechpm",
+      label: "GitHub"
     },
-    { 
-      icon: <Linkedin className="h-5 w-5" />, 
-      href: "https://linkedin.com", 
-      label: "LinkedIn" 
-    },
-    { 
-      icon: <Twitter className="h-5 w-5" />, 
-      href: "https://twitter.com", 
-      label: "Twitter" 
+    {
+      icon: <Linkedin className="h-5 w-5" />,
+      href: "https://www.linkedin.com/in/aishwarya-manek/",
+      label: "LinkedIn"
     }
   ];
 
@@ -34,7 +29,7 @@ const Footer = () => {
               Bridging technical expertise with product vision to create meaningful digital experiences.
             </p>
           </div>
-          
+
           <div className="md:text-center">
             <h4 className="font-medium mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
@@ -55,15 +50,15 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           <div className="md:text-right">
             <h4 className="font-medium mb-4">Connect</h4>
             <div className="flex md:justify-end space-x-3 mb-4">
               {socialLinks.map((link) => (
-                <a 
+                <a
                   key={link.label}
-                  href={link.href} 
-                  target="_blank" 
+                  href={link.href}
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full hover:bg-primary/10 text-muted-foreground hover:text-primary transition-colors"
                   aria-label={link.label}
@@ -73,12 +68,11 @@ const Footer = () => {
               ))}
             </div>
             <p className="text-sm text-muted-foreground">
-              hello@example.com<br />
-              +1 (555) 123-4567
+              am@gmail.com<br />
             </p>
           </div>
         </div>
-        
+
         <div className="mt-12 pt-6 border-t border-border/30 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-xs text-muted-foreground">
             © {currentYear} All rights reserved.

@@ -17,14 +17,14 @@ const About = () => {
             From developing software to leading product strategy, I've embraced the evolution of my tech career.
           </p>
         </ScrollReveal>
-        
+
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <ScrollReveal direction="left">
             <div className="relative">
               <div className="aspect-square rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b" 
-                  alt="Professional portrait" 
+                <img
+                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+                  alt="Professional portrait"
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -44,7 +44,7 @@ const About = () => {
               </div>
             </div>
           </ScrollReveal>
-          
+
           <ScrollReveal direction="right">
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 shadow-sm">
@@ -65,7 +65,7 @@ const About = () => {
                   </p>
                 </div>
               </div>
-              
+
               <div className="bg-white rounded-xl p-6 shadow-sm">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="mt-1 p-2 rounded-full bg-primary/10 text-primary">
@@ -74,7 +74,7 @@ const About = () => {
                   <div>
                     <h3 className="font-display font-bold text-xl mb-2">Evolution to Product Strategy</h3>
                     <p className="text-muted-foreground">
-                      As I grew professionally, I realized my passion for understanding user needs and translating them into product features. The transition to product management was natural, allowing me to leverage my technical background while focusing on strategic vision.
+                      As I grew professionally, I realized my passion for understanding user needs and translating them into product features. My education in business management led to a natural transition to product management, allowing me to leverage my technical background while focusing on strategic vision.
                     </p>
                   </div>
                 </div>
@@ -88,7 +88,7 @@ const About = () => {
           </ScrollReveal>
         </div>
       </div>
-      
+
       {/* Background decoration */}
       <div className="absolute -bottom-24 -right-24 w-48 h-48 rounded-full border border-primary/10" />
       <div className="absolute -bottom-12 -right-12 w-24 h-24 rounded-full border border-primary/10" />
