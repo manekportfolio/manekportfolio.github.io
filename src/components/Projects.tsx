@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import ScrollReveal from './ScrollReveal';
 import { ArrowRight, ExternalLink, Github } from 'lucide-react';
@@ -18,7 +17,7 @@ const projects = [
     title: "Payments Admin Tool",
     description: "Built an administrative dashboard for financial institutions to manage stored value cards and accounts, improving operational efficiency by 65%.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-    tags: ["Financial Services", "React", "Dashboard Design"],
+    tags: ["Financial Services", "Spring Boot", "Dashboard Design"],
     github: "#",
     link: "#"
   },
