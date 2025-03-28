@@ -61,14 +61,7 @@ const AnimatedText = ({
           style={{
             opacity: isVisible ? 1 : 0,
             maxWidth: isVisible ? '100%' : '0',
-            transition: `opacity 0.1s ease-out, max-width ${text.length * 0.06}s cubic-bezier(0.22, 1, 0.36, 1) steps(${text.length})`,
-            borderRight: isVisible ? '2px solid' : 'none',
-            paddingRight: isVisible ? '4px' : '0',
-            whiteSpace: 'nowrap',
-            overflow: 'hidden',
-            display: 'inline-block',
-            lineHeight: '1.3', /* Added line height to prevent text cutoff */
-            paddingBottom: '2px' /* Added padding at bottom to ensure descenders show properly */
+            transition: `opacity 0.1s ease-out, max-width ${text.length * 0.05}s steps(${text.length})`
           }}
         >
           {text}
@@ -94,12 +87,7 @@ const AnimatedText = ({
             isVisible ? "animate-text-reveal" : "opacity-0 translate-y-full"
           )}
           style={{
-            animationDelay: `${delay}ms`,
-            animationDuration: "0.8s",
-            animationFillMode: "forwards",
-            animationTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)",
-            lineHeight: '1.3', /* Added line height to prevent text cutoff */
-            paddingBottom: '2px' /* Added padding at bottom to ensure descenders show properly */
+            animationDelay: `${delay}ms`
           }}
         >
           {text}

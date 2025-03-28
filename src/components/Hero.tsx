@@ -21,19 +21,17 @@ const Hero = () => {
             <h1 className="text-4xl md:text-6xl font-display font-bold tracking-tight mb-4">
               <AnimatedText 
                 text="Bridging Code and" 
-                className="block mb-3 w-full" /* Increased bottom margin and added full width */
+                className="block mb-1" 
                 delay={300}
-                variant="typewriter"
               />
               <AnimatedText 
                 text="Product Strategy" 
                 className="block text-gradient" 
-                delay={1200}
-                variant="typewriter"
+                delay={600}
               />
             </h1>
             
-            <ScrollReveal delay={1800}>
+            <ScrollReveal delay={900}>
               <p className="text-lg text-muted-foreground md:text-xl max-w-xl leading-relaxed">
                 From writing elegant code to crafting product visions that solve real problems. 
                 I bring a technical foundation to strategic product management.
@@ -41,23 +39,17 @@ const Hero = () => {
             </ScrollReveal>
           </div>
           
-          <ScrollReveal delay={2100}>
+          <ScrollReveal delay={1100}>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="#projects" 
                 className="inline-flex items-center justify-center rounded-md px-6 py-3 text-sm font-medium bg-primary text-primary-foreground shadow transition-all hover:bg-primary/90 hover:scale-[1.02] active:scale-[0.98]"
-                style={{
-                  transition: "all 0.25s cubic-bezier(0.22, 1, 0.36, 1)"
-                }}
               >
                 View Projects
               </a>
               <a 
                 href="#contact" 
                 className="inline-flex items-center justify-center rounded-md border border-input px-6 py-3 text-sm font-medium bg-background shadow-sm hover:bg-accent hover:text-accent-foreground transition-all"
-                style={{
-                  transition: "all 0.25s cubic-bezier(0.22, 1, 0.36, 1)"
-                }}
               >
                 Get in Touch
               </a>
@@ -69,33 +61,16 @@ const Hero = () => {
       <div className="absolute bottom-12 left-1/2 -translate-x-1/2 hidden md:block animate-bounce">
         <a 
           href="#about" 
-          className="inline-flex items-center justify-center h-10 w-10 rounded-full border border-primary/10 bg-primary/5 text-primary hover:bg-primary/10 transition-colors"
+          className="inline-flex items-center justify-center h-10 w-10 rounded-full border border-primary/10 bg-primary/5 text-primary"
           aria-label="Scroll to About section"
-          style={{
-            animationDuration: "2s",
-            transition: "all 0.25s ease"
-          }}
         >
           <ArrowDown className="h-4 w-4" />
         </a>
       </div>
       
-      {/* Background decoration with improved animations */}
-      <div 
-        className="absolute top-1/2 right-0 -translate-y-1/2 w-1/2 h-1/2 bg-gradient-to-l from-primary/5 to-transparent rounded-l-full blur-3xl"
-        style={{
-          animation: "pulse 8s infinite alternate ease-in-out",
-          opacity: 0.7
-        }}
-      />
-      <div 
-        className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-t from-primary/5 to-transparent rounded-tr-full blur-3xl"
-        style={{
-          animation: "pulse 10s infinite alternate-reverse ease-in-out",
-          animationDelay: "2s",
-          opacity: 0.5
-        }}
-      />
+      {/* Background decoration */}
+      <div className="absolute top-1/2 right-0 -translate-y-1/2 w-1/2 h-1/2 bg-gradient-to-l from-primary/5 to-transparent rounded-l-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-t from-primary/5 to-transparent rounded-tr-full blur-3xl" />
     </section>
   );
 };
