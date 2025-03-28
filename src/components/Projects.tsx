@@ -39,7 +39,7 @@ const categories = [
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('all');
-  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
+  const [hoveredProject, setHoveredProject] = useState<string | number | null>(null);
 
   return (
     <section id="projects" className="section-padding relative overflow-hidden">
@@ -150,7 +150,6 @@ const Projects = () => {
         </ScrollReveal>
       </div>
       
-      {/* Background decoration */}
       <div className="absolute top-20 left-0 w-32 h-32 rounded-full bg-primary/5 blur-2xl -z-10" />
       <div className="absolute bottom-20 right-10 w-64 h-64 rounded-full bg-primary/5 blur-3xl -z-10" />
     </section>
