@@ -21,7 +21,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-6xl font-display font-bold tracking-tight mb-4">
               <AnimatedText 
                 text="Bridging Code and" 
-                className="block mb-1" 
+                className="block mb-3 w-full" /* Increased bottom margin and added full width */
                 delay={300}
                 variant="typewriter"
               />

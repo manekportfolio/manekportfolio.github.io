@@ -66,7 +66,9 @@ const AnimatedText = ({
             paddingRight: isVisible ? '4px' : '0',
             whiteSpace: 'nowrap',
             overflow: 'hidden',
-            display: 'inline-block'
+            display: 'inline-block',
+            lineHeight: '1.3', /* Added line height to prevent text cutoff */
+            paddingBottom: '2px' /* Added padding at bottom to ensure descenders show properly */
           }}
         >
           {text}
@@ -95,7 +97,9 @@ const AnimatedText = ({
             animationDelay: `${delay}ms`,
             animationDuration: "0.8s",
             animationFillMode: "forwards",
-            animationTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)"
+            animationTimingFunction: "cubic-bezier(0.22, 1, 0.36, 1)",
+            lineHeight: '1.3', /* Added line height to prevent text cutoff */
+            paddingBottom: '2px' /* Added padding at bottom to ensure descenders show properly */
           }}
         >
           {text}
