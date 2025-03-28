@@ -64,7 +64,9 @@ const AnimatedText = ({
             transition: `opacity 0.1s ease-out, max-width ${text.length * 0.06}s cubic-bezier(0.22, 1, 0.36, 1) steps(${text.length})`,
             borderRight: isVisible ? '2px solid' : 'none',
             paddingRight: isVisible ? '4px' : '0',
-            animationDelay: `${delay}ms`
+            whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            display: 'inline-block'
           }}
         >
           {text}

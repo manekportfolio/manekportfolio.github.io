@@ -23,17 +23,17 @@ const Hero = () => {
                 text="Bridging Code and" 
                 className="block mb-1" 
                 delay={300}
-                variant="reveal"
+                variant="typewriter"
               />
               <AnimatedText 
                 text="Product Strategy" 
                 className="block text-gradient" 
-                delay={600}
+                delay={1200}
                 variant="typewriter"
               />
             </h1>
             
-            <ScrollReveal delay={900}>
+            <ScrollReveal delay={1800}>
               <p className="text-lg text-muted-foreground md:text-xl max-w-xl leading-relaxed">
                 From writing elegant code to crafting product visions that solve real problems. 
                 I bring a technical foundation to strategic product management.
@@ -41,7 +41,7 @@ const Hero = () => {
             </ScrollReveal>
           </div>
           
-          <ScrollReveal delay={1100}>
+          <ScrollReveal delay={2100}>
             <div className="flex flex-col sm:flex-row gap-4">
               <a 
                 href="#projects" 
