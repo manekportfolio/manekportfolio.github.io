@@ -5,12 +5,12 @@ import { cn } from '@/lib/utils';
 
 const projects = [
   {
-    id: 1,
+    id: "ecommerce-redesign",
     title: "E-Commerce Platform Redesign",
     description: "Led a complete redesign of the customer journey, resulting in a 35% increase in conversion rates and 42% reduction in cart abandonment.",
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     tags: ["Product Strategy", "UX Design", "A/B Testing"],
-    link: "#"
+    link: "/projects/ecommerce-redesign"
   },
   {
     id: 2,
