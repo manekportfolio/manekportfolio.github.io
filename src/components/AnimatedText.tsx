@@ -66,8 +66,8 @@ const AnimatedText = ({
             whiteSpace: 'nowrap',
             overflow: 'hidden',
             display: 'inline-block',
-            lineHeight: '1.3', /* Added line height to prevent text cutoff */
-            paddingBottom: '2px' /* Added padding at bottom to ensure descenders show properly */
+          lineHeight: '1.2', /* Added line height to prevent text cutoff */
+            //paddingBottom: '2px' /* Added padding at bottom to ensure descenders show properly */
           }}
         >
           {text}
@@ -85,8 +85,6 @@ const AnimatedText = ({
         )}
         style={{
           transitionDelay: `${delay}ms`,
-          lineHeight: '1.3', /* Added line height to prevent text cutoff */
-          paddingBottom: '2px' /* Added padding at bottom to ensure descenders show properly */
         }}
       >
         <span
