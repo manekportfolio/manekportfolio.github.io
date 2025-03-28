@@ -23,13 +23,13 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitted(true);
       setFormState({ name: '', email: '', message: '' });
-      
+
       // Reset success message after 5 seconds
       setTimeout(() => setSubmitted(false), 5000);
     }, 1500);
@@ -39,20 +39,19 @@ const Contact = () => {
     {
       icon: <Mail className="h-5 w-5" />,
       title: "Email",
-      value: "hello@example.com",
-      link: "mailto:hello@example.com"
+      value: "amnk.459@gmail.com",
+      link: "mailto:amnk.459@gmail.com"
     },
-    {
-      icon: <Phone className="h-5 w-5" />,
-      title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
-    },
+    // {
+    //   icon: <LinkedIn className="h-5 w-5" />,
+    //   title: "LinkedIn",
+    //   value: "https://www.linkedin.com/in/aishwarya-manek/",
+    //   link: "https://www.linkedin.com/in/aishwarya-manek/"
+    // },
     {
       icon: <MapPin className="h-5 w-5" />,
       title: "Location",
-      value: "San Francisco, CA",
-      link: "#"
+      value: "India",
     }
   ];
 
@@ -70,7 +69,7 @@ const Contact = () => {
             Have a project in mind or want to discuss potential opportunities? Reach out and let's start a conversation.
           </p>
         </ScrollReveal>
-        
+
         <div className="grid lg:grid-cols-5 gap-12 items-start">
           <ScrollReveal direction="left" className="lg:col-span-2">
             <div className="space-y-8">
@@ -80,11 +79,11 @@ const Contact = () => {
                   Feel free to reach out through any of the following channels. I'm always open to discussing new projects, creative ideas, or opportunities.
                 </p>
               </div>
-              
+
               <div className="space-y-4">
                 {contactInfo.map((item) => (
-                  <a 
-                    key={item.title} 
+                  <a
+                    key={item.title}
                     href={item.link}
                     className="flex items-start gap-3 p-3 rounded-lg hover:bg-secondary/50 transition-colors"
                   >
@@ -100,7 +99,7 @@ const Contact = () => {
               </div>
             </div>
           </ScrollReveal>
-          
+
           <ScrollReveal direction="right" className="lg:col-span-3">
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -150,7 +149,7 @@ const Contact = () => {
                     required
                   ></textarea>
                 </div>
-                
+
                 <div className="relative">
                   <button
                     type="submit"
@@ -178,7 +177,7 @@ const Contact = () => {
                       </>
                     )}
                   </button>
-                  
+
                   {submitted && (
                     <div className="absolute top-full left-0 mt-2 text-sm text-green-600 flex items-center">
                       <span className="mr-1">✓</span> Thanks! I'll get back to you soon.
@@ -190,7 +189,7 @@ const Contact = () => {
           </ScrollReveal>
         </div>
       </div>
-      
+
       {/* Background decoration */}
       <div className="absolute top-1/4 left-0 w-48 h-48 bg-primary/5 rounded-full blur-3xl -z-10" />
     </section>
