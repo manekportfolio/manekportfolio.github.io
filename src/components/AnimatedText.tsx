@@ -15,16 +15,16 @@ const AnimatedText = ({
   className,
   once = true,
   delay = 0,
-  variant = 'reveal',
+  variant = 'reveal' | 'typewriter',
 }: AnimatedTextProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const intersected = useRef(false);
-  
+
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
-    
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -44,16 +44,16 @@ const AnimatedText = ({
         threshold: 0.1,
       }
     );
-    
+
     observer.observe(container);
-    
+
     return () => observer.disconnect();
   }, [delay, once]);
-  
+
   if (variant === 'typewriter') {
     return (
       <div ref={containerRef} className={cn("overflow-hidden", className)}>
-        <span 
+        <span
           className={cn(
             "inline-block",
             isVisible && "animate-typing"
@@ -61,7 +61,13 @@ const AnimatedText = ({
           style={{
             opacity: isVisible ? 1 : 0,
             maxWidth: isVisible ? '100%' : '0',
-            transition: `opacity 0.1s ease-out, max-width ${text.length * 0.05}s steps(${text.length})`
+            transition: `opacity 0.1s ease-out, max-width ${text.length * 0.05}s steps(${text.length})`,
+            paddingRight: isVisible ? '4px' : '0',
+            whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            display: 'inline-block',
+            lineHeight: '1.3', /* Added line height to prevent text cutoff */
+            paddingBottom: '2px' /* Added padding at bottom to ensure descenders show properly */
           }}
         >
           {text}
@@ -69,19 +75,21 @@ const AnimatedText = ({
       </div>
     );
   }
-  
+
   return (
     <div ref={containerRef} className={cn("overflow-hidden", className)}>
-      <div 
+      <div
         className={cn(
           "relative overflow-hidden",
           isVisible && "after:translate-y-full"
         )}
         style={{
-          transitionDelay: `${delay}ms`
+          transitionDelay: `${delay}ms`,
+          lineHeight: '1.3', /* Added line height to prevent text cutoff */
+          paddingBottom: '2px' /* Added padding at bottom to ensure descenders show properly */
         }}
       >
-        <span 
+        <span
           className={cn(
             "inline-block",
             isVisible ? "animate-text-reveal" : "opacity-0 translate-y-full"
