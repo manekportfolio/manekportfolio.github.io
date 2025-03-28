@@ -28,6 +28,7 @@ const Hero = () => {
                 text="Product Strategy" 
                 className="block text-gradient" 
                 delay={600}
+                variant="typewriter"
               />
             </h1>
             
