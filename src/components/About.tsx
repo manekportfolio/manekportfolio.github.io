@@ -53,7 +53,7 @@ const About = () => {
                     <Code className="h-5 w-5" />
                   </div>
                   <div>
-                    <h3 className="font-display font-bold text-xl mb-2">From Developer to PM</h3>
+                    <h3 className="font-display font-bold text-xl mb-2">From Developer to Product Manager</h3>
                     <p className="text-muted-foreground">
                       My journey began as a software developer, where I honed my technical skills and learned to write clean, efficient code. This foundation gave me a deep understanding of what it takes to build great products from the ground up.
                     </p>

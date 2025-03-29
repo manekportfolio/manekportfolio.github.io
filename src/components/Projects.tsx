@@ -55,24 +55,6 @@ const Projects = () => {
           </p>
         </ScrollReveal>
 
-        <div className="flex justify-center mb-12">
-          <div className="inline-flex p-1 rounded-lg bg-secondary/50">
-            {categories.map((category) => (
-              <button
-                key={category.id}
-                className={cn(
-                  "px-4 py-2 text-sm rounded-md transition-all",
-                  activeCategory === category.id
-                    ? "bg-white text-primary shadow-sm"
-                    : "text-muted-foreground hover:text-foreground"
-                )}
-                onClick={() => setActiveCategory(category.id)}
-              >
-                {category.label}
-              </button>
-            ))}
-          </div>
-        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
