@@ -70,16 +70,17 @@ const Contact = () => {
           </p>
         </ScrollReveal>
 
-        <div className="grid lg:grid-cols-5 gap-12 items-start">
-          <ScrollReveal direction="left" className="lg:col-span-2">
-            <div className="space-y-8">
+        <div className="grid lg:grid-cols-4 gap-12 items-start">
+          <ScrollReveal className="lg:col-span-2">
+
               <div className="space-y-4">
                 <h3 className="text-xl font-display font-bold">Contact Information</h3>
                 <p className="text-muted-foreground">
                   Feel free to reach out through any of the following channels. I'm always open to discussing new projects, creative ideas, or opportunities.
                 </p>
               </div>
-
+              </ScrollReveal>
+  <ScrollReveal className="lg:col-span-2">
               <div className="space-y-4">
                 {contactInfo.map((item) => (
                   <a
@@ -97,7 +98,7 @@ const Contact = () => {
                   </a>
                 ))}
               </div>
-            </div>
+
           </ScrollReveal>
         </div>
       </div>
