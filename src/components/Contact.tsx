@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import ScrollReveal from './ScrollReveal';
-import { Mail, MessageSquare, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, MessageSquare, Phone, MapPin, Send, Linkedin } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const Contact = () => {
@@ -42,17 +42,17 @@ const Contact = () => {
       value: "amnk.459@gmail.com",
       link: "mailto:amnk.459@gmail.com"
     },
-    // {
-    //   icon: <LinkedIn className="h-5 w-5" />,
-    //   title: "LinkedIn",
-    //   value: "https://www.linkedin.com/in/aishwarya-manek/",
-    //   link: "https://www.linkedin.com/in/aishwarya-manek/"
-    // },
     {
-      icon: <MapPin className="h-5 w-5" />,
-      title: "Location",
-      value: "India",
+      icon: <Linkedin  className="h-5 w-5" />,
+      title: "LinkedIn",
+      value: "Aishwarya Manek",
+      link: "https://www.linkedin.com/in/aishwarya-manek/"
     }
+    // {
+    //   icon: <MapPin className="h-5 w-5" />,
+    //   title: "Location",
+    //   value: "India",
+    // }
   ];
 
   return (

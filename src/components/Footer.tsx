@@ -68,7 +68,7 @@ const Footer = () => {
               ))}
             </div>
             <p className="text-sm text-muted-foreground">
-              am@gmail.com<br />
+              amnk.459@gmail.com<br />
             </p>
           </div>
         </div>
