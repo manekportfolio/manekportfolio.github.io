@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="max-w-3xl mx-auto md:mx-0">
           <ScrollReveal className="mb-4" delay={200}>
             <span className="inline-block py-1 px-3 text-xs font-medium bg-primary/5 rounded-full">
-              Software Developer & Product Manager
+              Product Manager
             </span>
           </ScrollReveal>
 
@@ -60,15 +60,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 hidden md:block animate-bounce">
-        <a
-          href="#about"
-          className="inline-flex items-center justify-center h-10 w-10 rounded-full border border-primary/10 bg-primary/5 text-primary"
-          aria-label="Scroll to About section"
-        >
-          <ArrowDown className="h-4 w-4" />
-        </a>
-      </div>
+
 
       {/* Background decoration */}
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-1/2 h-1/2 bg-gradient-to-l from-primary/5 to-transparent rounded-l-full blur-3xl" />

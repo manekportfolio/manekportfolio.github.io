@@ -45,7 +45,7 @@ const Contact = () => {
     {
       icon: <Linkedin  className="h-5 w-5" />,
       title: "LinkedIn",
-      value: "Aishwarya Manek",
+      value: "A. Manek",
       link: "https://www.linkedin.com/in/aishwarya-manek/"
     }
     // {

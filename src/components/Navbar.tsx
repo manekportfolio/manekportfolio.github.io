@@ -24,7 +24,7 @@ const Navbar = () => {
     } else {
       document.body.style.overflow = '';
     }
-    
+
     return () => {
       document.body.style.overflow = '';
     };
@@ -42,19 +42,19 @@ const Navbar = () => {
     <header
       className={cn(
         'fixed top-0 left-0 w-full z-50 transition-all duration-300',
-        isScrolled 
-          ? 'py-3 bg-white/80 backdrop-blur-md shadow-sm' 
+        isScrolled
+          ? 'py-3 bg-white/80 backdrop-blur-md shadow-sm'
           : 'py-5 bg-transparent'
       )}
     >
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}
-        <a 
-          href="#home" 
+        <a
+          href="#home"
           className="relative font-display text-xl font-bold tracking-tight z-50"
           aria-label="Home"
         >
-          <span className="text-gradient">Portfolio.</span>
+          <span className="text-gradient">A Manek</span>
         </a>
 
         {/* Desktop Navigation */}
@@ -90,8 +90,8 @@ const Navbar = () => {
         <div
           className={cn(
             'fixed inset-0 bg-background z-40 flex items-center justify-center transition-all duration-300 md:hidden',
-            isMenuOpen 
-              ? 'opacity-100 pointer-events-auto' 
+            isMenuOpen
+              ? 'opacity-100 pointer-events-auto'
               : 'opacity-0 pointer-events-none'
           )}
         >
@@ -104,8 +104,8 @@ const Navbar = () => {
                     'text-2xl font-medium inline-block transition-all duration-300',
                     isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
                   )}
-                  style={{ 
-                    transitionDelay: isMenuOpen ? `${navLinks.indexOf(link) * 100}ms` : '0ms' 
+                  style={{
+                    transitionDelay: isMenuOpen ? `${navLinks.indexOf(link) * 100}ms` : '0ms'
                   }}
                   onClick={toggleMenu}
                 >

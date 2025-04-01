@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <a href="#home" className="inline-block font-display text-xl font-bold tracking-tight mb-4">
-              <span className="text-gradient">Portfolio.</span>
+              <span className="text-gradient">A. Manek</span>
             </a>
             <p className="text-muted-foreground text-sm max-w-xs">
               Bridging technical expertise with product vision to create meaningful digital experiences.

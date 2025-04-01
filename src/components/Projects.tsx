@@ -26,7 +26,7 @@ const projects = [
     description: "Conducted a regression analysis of ESG scores of firms with the presence of sustainability-related incentives for executives. Developed a new operational model for sustainability performance incentivization.",
     image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09",
     tags: ["Sustainability", "Performance Management", "ESG"],
-    link: "https://www.ebs.edu/en/awarding-the-srh-social-impact-thesis-awards-2023"
+    //extlink: "https://www.ebs.edu/en/awarding-the-srh-social-impact-thesis-awards-2023"
   }
 ];
 
@@ -90,12 +90,14 @@ const Projects = () => {
                   <h3 className="font-display font-bold text-xl mb-2">{project.title}</h3>
                   <p className="text-muted-foreground text-sm mb-6 flex-1">{project.description}</p>
                   <div className="flex items-center justify-between mt-auto">
+                  {project.link && (
                     <a
                       href={project.link}
                       className="inline-flex items-center text-sm font-medium text-primary hover:underline"
                     >
                       View Project <ArrowRight className="ml-1 h-4 w-4" />
                     </a>
+                  )}
                     <div className="flex items-center gap-2">
                       {project.github && (
                         <a
@@ -106,13 +108,15 @@ const Projects = () => {
                           <Github className="h-4 w-4" />
                         </a>
                       )}
+                      {project.extlink && (
                       <a
-                        href={project.link}
+                        href={project.extlink}
                         className="p-1.5 rounded-full text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors"
                         aria-label="View live project"
                       >
                         <ExternalLink className="h-4 w-4" />
                       </a>
+                    )}
                     </div>
                   </div>
                 </div>
@@ -121,14 +125,7 @@ const Projects = () => {
           ))}
         </div>
 
-        <ScrollReveal className="text-center mt-12">
-          <a
-            href="#"
-            className="inline-flex items-center justify-center rounded-md border border-input px-6 py-3 text-sm font-medium bg-background shadow-sm hover:bg-accent hover:text-accent-foreground transition-all"
-          >
-            View All Projects <ArrowRight className="ml-2 h-4 w-4" />
-          </a>
-        </ScrollReveal>
+
       </div>
       {/* Background decoration */}
       <div className="absolute top-20 left-0 w-32 h-32 rounded-full bg-primary/5 blur-2xl -z-10" />
