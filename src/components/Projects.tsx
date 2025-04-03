@@ -14,7 +14,7 @@ const Projects = () => {
       tags: ["Product Management", "Data Visualization", "UX Design"],
       role: "Product Manager",
       githubLink: "#",
-      liveLink: "#"
+      liveLink: "#/project"
     },
     {
       title: "E-Commerce Platform",
@@ -23,7 +23,7 @@ const Projects = () => {
       tags: ["Software Development", "Full-Stack", "Architecture"],
       role: "Lead Developer",
       githubLink: "#",
-      liveLink: "#"
+      liveLink: "#/project"
     },
     {
       title: "Mobile App Redesign",
@@ -32,7 +32,7 @@ const Projects = () => {
       tags: ["Product Strategy", "UX/UI", "Mobile"],
       role: "Product Manager",
       githubLink: "#",
-      liveLink: "#"
+      liveLink: "#/project"
     }
   ];
 
@@ -50,9 +50,9 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="aspect-video overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
+                <img
+                  src={project.image}
+                  alt={project.title}
                   className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
                 />
               </div>
