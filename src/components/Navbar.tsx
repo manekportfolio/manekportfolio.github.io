@@ -55,7 +55,7 @@ const Navbar = () => {
           className="relative font-display text-xl font-bold tracking-tight z-50"
           aria-label="Home"
         >
-          <span className="text-gradient">A Manek</span>
+          <span className="text-gradient">A. Manek</span>
         </Link>
 
         {/* Desktop Navigation */}
