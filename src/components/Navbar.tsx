@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,11 +32,11 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/home' },
+    { name: 'About', href: '/about' },
+    { name: 'Projects', href: '/projects' },
+    { name: 'Skills', href: '/skills' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -49,25 +50,25 @@ const Navbar = () => {
     >
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}
-        <a
-          href="#home"
+        <Link
+          to="/home"
           className="relative font-display text-xl font-bold tracking-tight z-50"
           aria-label="Home"
         >
           <span className="text-gradient">A Manek</span>
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:block">
           <ul className="flex space-x-8">
             {navLinks.map((link) => (
               <li key={link.name}>
-                <a
-                  href={link.href}
+                <Link
+                  to={link.href}
                   className="text-sm font-medium text-foreground/90 transition-colors hover:text-foreground relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
                 >
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -98,8 +99,8 @@ const Navbar = () => {
           <ul className="flex flex-col space-y-8 text-center">
             {navLinks.map((link) => (
               <li key={link.name} className="overflow-hidden">
-                <a
-                  href={link.href}
+                <Link
+                  to={link.href}
                   className={cn(
                     'text-2xl font-medium inline-block transition-all duration-300',
                     isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
@@ -110,7 +111,7 @@ const Navbar = () => {
                   onClick={toggleMenu}
                 >
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
