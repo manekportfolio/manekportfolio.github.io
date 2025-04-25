@@ -7,16 +7,16 @@ const projects = [
   {
     id: 1,
     title: "E-Commerce Platform Features",
-    description: "Created new features and modernized the customer journey, resulting in a 9.1% increase in conversion rate. Lauched popularity sorting feature which lead to 4.8% increase in average order value.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    description: "Created new features and modernized the Check24 customer journey, resulting in a 9.1% increase in conversion rate. Lauched popularity sorting feature which led to 4.8% increase in average order value.",
+    image: "/check24.png",
     tags: ["Product Strategy", "Figma", "A/B Testing"],
     //link: "#"
   },
   {
     id: 2,
     title: "Payments Admin Website",
-    description: "Built an administrative website for payments microservices to manage and implement customer support requests, improving operational efficiency by 72%.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    description: "Built an administrative website for PayPal payments microservices to manage and implement customer support requests, improving operational efficiency by 72%.",
+    image: "/paypal.png",
     tags: ["Backend Development", "Spring Boot", "API Design"],
     //link: "#"
   },
@@ -26,7 +26,7 @@ const projects = [
     description: "Conducted a regression analysis of ESG scores of firms with the presence of sustainability-related incentives for executives. Developed a new operational model for sustainability performance incentivization.",
     image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09",
     tags: ["Sustainability", "Performance Management", "ESG"],
-    //extlink: "https://www.ebs.edu/en/awarding-the-srh-social-impact-thesis-awards-2023"
+    extlink: "https://www.ebs.edu/en/awarding-the-srh-social-impact-thesis-awards-2023"
   }
 ];
 
