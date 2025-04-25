@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     title: "E-Commerce Platform Features",
     description: "Created new features and modernized the customer journey, resulting in a 9.1% increase in conversion rate. Lauched popularity sorting feature which lead to 4.8% increase in average order value.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    image: "/Check.png",
     tags: ["Product Strategy", "Figma", "A/B Testing"],
     //link: "#"
   },
@@ -16,7 +16,7 @@ const projects = [
     id: 2,
     title: "Payments Admin Website",
     description: "Built an administrative website for payments microservices to manage and implement customer support requests, improving operational efficiency by 72%.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    image: "/Paypal.png",
     tags: ["Backend Development", "Spring Boot", "API Design"],
     //link: "#"
   },
